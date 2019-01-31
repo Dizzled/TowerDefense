@@ -136,6 +136,12 @@ module.exports = function(grunt) {
           src: ['data/img/**/*.png'],
           type: 'image'
         },{
+          src: ['img/sprite/**/*'],
+          type: 'image'
+        },{
+          src:['img/player/**/*'],
+          type: 'image'
+        },{
           src: ['data/img/**/*.json'],
           type: 'json'
         },{
