@@ -1,3 +1,4 @@
+
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -136,7 +137,7 @@ module.exports = function(grunt) {
           src: ['data/img/**/*.png'],
           type: 'image'
         },{
-          src: ['data/img/sprite/**/*'],
+          src: ['./img/sprite/**/*.png'],
           type: 'image'
         },{
           src:['img/player/**/*'],
@@ -149,7 +150,7 @@ module.exports = function(grunt) {
             type: 'tsx'
           },
           {
-            src: ['data/map/**/*.json'],
+            src: ['data/map/**/*.tmx'],
             type: 'tmx'
           }]
       }
