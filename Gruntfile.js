@@ -136,7 +136,7 @@ module.exports = function(grunt) {
           src: ['data/img/**/*.png'],
           type: 'image'
         },{
-          src: ['img/sprite/**/*'],
+          src: ['data/img/sprite/**/*'],
           type: 'image'
         },{
           src:['img/player/**/*'],
@@ -145,12 +145,13 @@ module.exports = function(grunt) {
           src: ['data/img/**/*.json'],
           type: 'json'
         },{
-          src: ['data/map/**/*.tmx', 'data/map/**/*.json'],
-          type: 'tmx'
-        },{
-          src: ['data/map/**/*.tsx'],
-          type: 'tsx'
-        }]
+            src: ['data/map/**/*.tsx'],
+            type: 'tsx'
+          },
+          {
+            src: ['data/map/**/*.json'],
+            type: 'tmx'
+          }]
       }
     },
 

@@ -3,12 +3,8 @@
  <tileset firstgid="1" name="Village" tilewidth="32" tileheight="32" tilecount="360" columns="8">
   <image source="../img/magecity.png" width="256" height="1450"/>
  </tileset>
- <tileset firstgid="361" name="Zelda" tilewidth="32" tileheight="32" tilecount="256" columns="16">
-  <image source="../img/mountain_landscape.png" width="512" height="512"/>
- </tileset>
- <tileset firstgid="617" name="Mountain_Snow" tilewidth="32" tileheight="32" tilecount="256" columns="16">
-  <image source="../img/snowWIP.png" width="512" height="512"/>
- </tileset>
+ <tileset firstgid="361" source="Zelda.tsx"/>
+ <tileset firstgid="617" source="Mountain_Snow.tsx"/>
  <objectgroup id="3" name="collision">
   <object id="1" name="enemystart" x="8" y="171" width="39" height="75"/>
   <object id="2" name="mainplayer" x="651" y="106" width="47" height="49"/>

@@ -4,7 +4,7 @@
   "main": "build/main.js",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-asar": "bwin/grunt-asar#update-asar",
+    "grunt-asar": "github:bwin/grunt-asar#update-asar",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
