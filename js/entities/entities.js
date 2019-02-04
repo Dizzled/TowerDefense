@@ -9,6 +9,15 @@ game.PlayerEntity = me.Entity.extend({
     init:function (x, y, settings) {
         // call the constructor
         this._super(me.Entity, 'init', [x, y , settings]);
+
+/* Filter collision detection with collision shapes, enemies and collectables*/
+            this.body.setCollisionMask(
+            me.collision.types.WORLD_SHAPE |
+            me.collision.types.ENEMY_OBJECT |
+            me.collision.types.COLLECTABLE_OBJECT
+        );
+
+
     },
 
     /**
@@ -31,7 +40,13 @@ game.PlayerEntity = me.Entity.extend({
      * (called when colliding with other objects)
      */
     onCollision : function (response, other) {
-        // Make all other objects solid
-        return true;
+       if (response.b.body.collisionType === me.collision.types.WORLD_SHAPE) {
+           // makes the other entity solid, by substracting the overlap vector to the current position
+          this.pos.sub(response.overlapV);
+           // not solid
+           return false;
+       }
+       // Make the object solid
+       return true;
     }
 });

@@ -32,7 +32,7 @@ var game = {
 
         // add our player entity in the entity pool
         me.pool.register("mainplayer", game.PlayerEntity);
-
+        /*
         me.input.bindKey(me.input.KEY.LEFT,  "left");
         me.input.bindKey(me.input.KEY.RIGHT, "right");
         // map X, Up Arrow and Space for jump
@@ -40,6 +40,7 @@ var game = {
         me.input.bindKey(me.input.KEY.UP,     "jump", true);
         me.input.bindKey(me.input.KEY.SPACE,  "jump", true);
         // add our player entity in the entity pool
+        */
         me.pool.register("mainPlayer", game.PlayerEntity);
 
         // Start the game.
